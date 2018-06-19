@@ -27,7 +27,7 @@ public:
 		//．．．．表现受伤动作的代码
 		nLifeValue -= nPower;
 	}
-	void Attack(CCreature * pobj)//基类指针可指向派生类
+	void Attack(CCreature * pobj)//基类指针可指向派生类,后面的*pobj在CDragon攻击时可以是CGhost,CWolf,fightback时也一样
 	{
 		//．．．表现攻击动作的代码
 		pobj->Hurted(nPower);
